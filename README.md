@@ -19,7 +19,7 @@ The instructions are encoded using subgenres of lo-fi.
 |greek downtempo|if current cell is nonzero, jump to command after "jazz boom bap".|
 
 You may notice these instructions are similar to [brainfuck](https://en.wikipedia.org/wiki/Brainfuck). This would be correct!
-slang is actually bijective to brainfuck. Because of this, I also wrote a transpiler from brainfuck to slang. You can find this here with the `transpiler.py`.
+slang is actually bijective to brainfuck. Because of this, I also wrote a transpiler from brainfuck to slang,`transpiler.py`.
 
 # Setup
 Setup is pretty easy. First, install the modules in `requirements.txt`. Second, generate keys in the [Spotify developer dashboard](https://developer.spotify.com/dashboard). Here, you will need to generate a `Client ID` and `Client Secret`. You will also need to set a `redirect uri` of your app to `http://127.0.0.1:9000`. After this, create a `.creds` folder in the same directory as the interpreter/transpiler. In this folder, create a `creds.json` with the following content.
