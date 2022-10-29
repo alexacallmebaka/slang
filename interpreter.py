@@ -67,7 +67,6 @@ class Interpreter:
 
     #execute an instruction.
     def interp(self, command: tuple) -> None: #{{{1
-        print(command[0], command[1]) 
         #take the corresponding action based on the genre.
         match command[0]:
             case 'chillhop':
