@@ -1,7 +1,7 @@
 # *slang*: the Spotify programming language.
 slang is a programming language where valid code is input through a Spotify playlist.
 
-**ATTN: IT LOOKS LIKE SOME OF THE ARTISTS IN `tracks.txt` HAVE CHANGED THIER GENRE. THEREFORE, SOME SLANG PROGRAMS THAT ONCE DID WORK MAY NOT WORK ANYMORE.**
+**ATTN: IT LOOKS LIKE SOME OF THE ARTISTS IN `tracks.txt` HAVE CHANGED THIER GENRE. THEREFORE, SOME SLANG PROGRAMS THAT ONCE WORKED MAY NOT WORK ANYMORE.**
 
 slang is a Turing Tarpit language, where different instructions are encoded by the genre of the first artist of a song.
 The only internal data structure is an array of binary data, which is interacted with using eight instructions.
@@ -33,14 +33,14 @@ Setup is pretty easy. First, install the modules in `requirements.txt`. Second, 
 
 After this, you are good to go!
 
-#Running
+# Running
 To run the interpreter, simply do
-```python
+```
 python3 interperter.py source_code_playlist_url
 ```
 
 To transpile from brainfuck to slang, run
-```python
+```
 python3 transpiler.py /path/to/bf/code destination_code_playlist_url
 ```
 
