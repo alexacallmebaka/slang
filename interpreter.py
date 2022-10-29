@@ -67,7 +67,7 @@ class Interpreter:
 
     #execute an instruction.
     def interp(self, command: tuple) -> None: #{{{1
-        
+        print(command[0], command[1]) 
         #take the corresponding action based on the genre.
         match command[0]:
             case 'chillhop':
@@ -89,6 +89,7 @@ class Interpreter:
                     #look for the matching "greek downtempo".
                     while True:
                         self.inst_ptr += 1
+                        breakpoint()
                         #push to the stack if we see the beginning of another loop.
                         if self.inst[self.inst_ptr][0] == 'jazz boom bap':
                             self.nest.append(True)
@@ -100,7 +101,7 @@ class Interpreter:
                             else:
                                 self.nest.pop()
             
-            #very similar to the "jazz boom bap" case, except moves backwards towards a 'jazz boom bap'.
+            #very similar to the "jazz boom bap" case, except moves backwards towards a "jazz boom bap".
             case 'greek downtempo':
                 if self.data[self.data_ptr] != 0:
                     while True:

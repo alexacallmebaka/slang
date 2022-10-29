@@ -1,14 +1,14 @@
 # *slang*: the Spotify programming language.
 slang is a programming language where valid code is input through a Spotify playlist.
 
-**ATTN: IT LOOKS LIKE SOME OF THE ARTISTS IN `tracks.txt` HAVE CHANGED THIER GENRE. THEREFORE, SOME SLANG PROGRAMS THAT ONCE DID WORK MAY NOT WORK ANYMORE.`
+**ATTN: IT LOOKS LIKE SOME OF THE ARTISTS IN `tracks.txt` HAVE CHANGED THIER GENRE. THEREFORE, SOME SLANG PROGRAMS THAT ONCE DID WORK MAY NOT WORK ANYMORE.**
 
 slang is a Turing Tarpit language, where different instructions are encoded by the genre of the first artist of a song.
 The only internal data structure is an array of binary data, which is interacted with using eight instructions.
 The instructions are encoded using subgenres of lo-fi.
 
 |genre|action|
---------------
+|-----|------|
 |chillhop|move data pointer to right.|
 |study beats|move data pointer to left.|
 |lo-fi jazzhop|increment data at pointer.|
